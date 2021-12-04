@@ -1,0 +1,13 @@
+Img 0: e, i
+Img 1: y, b
+Img 2: w, i
+Img 3: s, s
+Img 4: e, a
+Img 5: o, k
+Img 6: l, c
+Img 7: e, e
+Img 8: y, y
+Img 9: n, n
+Img 10: r, r
+Img 11: 0, 
+Img 12: 2, 2
