@@ -1,21 +1,5 @@
-ACTUAL LETTERS IN FILE: "5m"
-A
-L
-N
-I
-O
+ACTUAL LETTERS IN FILE: "Letters Med_Long.jpg"
 S
-I
-T
-E
+U
+4
 A
-B
-E
-H
-L
-T
-V
-?
-?
-?
-?

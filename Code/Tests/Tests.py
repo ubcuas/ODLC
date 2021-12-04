@@ -28,6 +28,7 @@ class Tests:
             for line in file:
                 #print(str(line,)[-2])
                 #print(str(line,)[-5])
+                #NOTE: CAREFUL WITH EMPTY LINE AT THE END
                 lor.append([str(line,)[-5], str(line,)[-2]])
             lor.pop(0)
         
@@ -46,7 +47,7 @@ class Tests:
         for i, letter in enumerate(lor):
             if letter[self.REC_HIGH] in loa:
                 correct.append(letter[self.REC_HIGH])
-                loa.pop(i)
+                loa.pop(loa.index(letter[self.REC_HIGH]))
             else:
                 wrong_guess.append(letter[self.REC_HIGH])
         
@@ -68,7 +69,7 @@ class Tests:
         for i, letter in enumerate(lor):
             if letter[self.REC_MODAL] in loa:
                 correct.append(letter[self.REC_MODAL])
-                loa.pop(i)
+                loa.pop(loa.index(letter[self.REC_MODAL]))
             else:
                 wrong_guess.append(letter[self.REC_MODAL])
         

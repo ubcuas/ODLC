@@ -49,3 +49,23 @@ Loops through all the contour and based on the image size and confidence, return
   * Image, int, int, *string*
 
 Given an image and it's number (the names of identified images in Detected are in the forms of number), it will rotate the image 'rotations' times and apply the 'method's filter to find which letter it detects the most or with most confidence.
+
+
+# Tests
+## recognized.txt
+Holds the predictions of an image in this form:
+Img #: (HIGH), (MODAL)
+
+Where (HIGH) is the single highest char it predicted on image # (found on Images/Detected/(IMG_NAME)/#.png)
+and (MODAL) is the most common predicted char
+
+## actual.txt
+Holds the actual chars of the image you are currently testing, one on each line
+The first line is there for description of what image the actual.txt info is holding
+
+## Tests
+Create two lists at __init__ with the info in actual.txt as a list and another list of lists in the form [(HIGH), (MODAL)] of the predicted chars.
+
+The accuracy tests print Green for correctly found letters, Yellow for letters in actual that were not found, and Red for incorrectly found items. 
+
+Expected to later on add tests for color and location

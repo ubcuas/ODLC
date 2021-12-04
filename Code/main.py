@@ -16,11 +16,6 @@ if __name__ == '__main__':
     name_img = "Letters Med_Long.jpg"
     name = name_img[:-4] #removes .png, .jpg or other 3 letter at back
 
-    tests = Tests()
-    tests.highest_accuracy()
-    tests.modal_accuracy()
-    exit()
-
     if not os.path.exists(os.path.join(os.getcwd(), "Images/Detected/" + name)):
         os.mkdir(os.path.join(os.getcwd(), "Images/Detected/" + name))
     if not os.path.exists(os.path.join(os.getcwd(), "Images/Identified/" + name)):
@@ -40,4 +35,8 @@ if __name__ == '__main__':
         imgDetected = imageClassifier.get_image("Detected/" + name + "/" + str(img_i) + ".png")
         imageClassifier.rotation_identifier(imgDetected, str(img_i))
     print('Finished')
+
+    tests = Tests()
+    tests.highest_accuracy()
+    tests.modal_accuracy()
 
