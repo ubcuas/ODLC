@@ -42,7 +42,7 @@ jobs:
         
     - name: run Tests with pytest
       run: |
-        pytest
+        ./Code/Tests/Tests.py
         
 #    - name: Test with pytest
 #      run: |
